@@ -9,8 +9,4 @@ RailsAdmin::Engine.routes.draw do
       end
     end
   end
-  get '/target' do
-    haml :index
-end
-
 end

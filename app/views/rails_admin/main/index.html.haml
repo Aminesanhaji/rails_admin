@@ -56,10 +56,9 @@
           %button#remove_filter.btn.btn-info{title: "Reset filters"}
             %i.icon-white.icon-remove
       .input-group
-        
+        %input.form-control.input-small{name: "query", type: "search", value: query, placeholder: "Chercher BDD"}
         %span.input-group-btn
-          %a{ :href => "/target", :title => "your link" }
-
+          %button.btn.btn-primary{type: 'submit', :'data-disable-with' => '<i class="icon-white icon-refresh"></i> '.html_safe + t('admin.misc.refresh')}
             
             = t('Go')
           
